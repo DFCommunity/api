@@ -4,13 +4,25 @@ const homeSchema = new Schema({
   Title: {
     type: String
   },
-  Context: {
+  Discription: {
     type: String
   },
-  Version: {
+  Tags: {
     type: String
   },
-  Organisation: {
+  Build: {
+    type: String
+  },
+  Creator: {
+    type: String
+  },
+  Docs: {
+    type: String
+  },
+  Org: {
+    type: String
+  },
+  OrgWebsite: {
     type: String
   }
 }, {
@@ -22,16 +34,20 @@ const homeSchema = new Schema({
 })
 
 homeSchema.methods = {
-  view (full) {
+  view(full) {
     const view = {
       // simple view
-      id: this.id,
+      // id: this.id,
       Title: this.Title,
-      Context: this.Context,
-      Version: this.Version,
-      Organisation: this.Organisation,
-      createdAt: this.createdAt,
-      updatedAt: this.updatedAt
+      Discription: this.Discription,
+      Tags: this.Tags,
+      Build: this.Build,
+      Creator: this.Creator,
+      Docs: this.Docs,
+      Org: this.Org,
+      OrgWebsite: this.OrgWebsite,
+      // createdAt: this.createdAt,
+      // updatedAt: this.updatedAt
     }
 
     return full ? {

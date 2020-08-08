@@ -1,4 +1,4 @@
-# delta-force-community-api v0.0.0
+# delta-force-community-api v0.0.1
 
 
 
@@ -8,8 +8,11 @@
 	- [Authenticate with Google](#authenticate-with-google)
 	
 - [Home](#home)
+	- [Create home](#create-home)
+	- [Delete home](#delete-home)
 	- [Retrieve home](#retrieve-home)
 	- [Retrieve homes](#retrieve-homes)
+	- [Update home](#update-home)
 	
 - [Notes](#notes)
 	- [Create notes](#create-notes)
@@ -76,6 +79,40 @@
 
 # Home
 
+## Create home
+
+
+
+	POST //
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| access_token			| String			|  <p>admin access token.</p>							|
+| Title			| 			|  <p>Home's Title.</p>							|
+| Discription			| 			|  <p>Home's Discription.</p>							|
+| Tags			| 			|  <p>Home's Tags.</p>							|
+| Build-State			| 			|  <p>Home's Build-State.</p>							|
+| Creator			| 			|  <p>Home's Creator.</p>							|
+| Docs			| 			|  <p>Home's Docs.</p>							|
+| Org			| 			|  <p>Home's Org.</p>							|
+| Org-Website			| 			|  <p>Home's Org-Website.</p>							|
+
+## Delete home
+
+
+
+	DELETE ///:id
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| access_token			| String			|  <p>admin access token.</p>							|
+
 ## Retrieve home
 
 
@@ -99,6 +136,27 @@
 | limit			| Number			| **optional** <p>Amount of returned items.</p>							|
 | sort			| String[]			| **optional** <p>Order of returned items.</p>							|
 | fields			| String[]			| **optional** <p>Fields to be returned.</p>							|
+
+## Update home
+
+
+
+	PUT ///:id
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| access_token			| String			|  <p>admin access token.</p>							|
+| Title			| 			|  <p>Home's Title.</p>							|
+| Discription			| 			|  <p>Home's Discription.</p>							|
+| Tags			| 			|  <p>Home's Tags.</p>							|
+| Build-State			| 			|  <p>Home's Build-State.</p>							|
+| Creator			| 			|  <p>Home's Creator.</p>							|
+| Docs			| 			|  <p>Home's Docs.</p>							|
+| Org			| 			|  <p>Home's Org.</p>							|
+| Org-Website			| 			|  <p>Home's Org-Website.</p>							|
 
 # Notes
 

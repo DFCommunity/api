@@ -3,7 +3,7 @@ import { Home } from '.'
 let home
 
 beforeEach(async () => {
-  home = await Home.create({ Title: 'test', Context: 'test', Version: 'test', Organisation: 'test' })
+  home = await Home.create({ Title: 'test', Discription: 'test', Tags: 'test', Build: 'test', Creator: 'test', Docs: 'test', Org: 'test', OrgWebsite: 'test' })
 })
 
 describe('view', () => {
@@ -12,9 +12,13 @@ describe('view', () => {
     expect(typeof view).toBe('object')
     expect(view.id).toBe(home.id)
     expect(view.Title).toBe(home.Title)
-    expect(view.Context).toBe(home.Context)
-    expect(view.Version).toBe(home.Version)
-    expect(view.Organisation).toBe(home.Organisation)
+    expect(view.Discription).toBe(home.Discription)
+    expect(view.Tags).toBe(home.Tags)
+    expect(view.Build).toBe(home.Build)
+    expect(view.Creator).toBe(home.Creator)
+    expect(view.Docs).toBe(home.Docs)
+    expect(view.Org).toBe(home.Org)
+    expect(view.OrgWebsite).toBe(home.OrgWebsite)
     expect(view.createdAt).toBeTruthy()
     expect(view.updatedAt).toBeTruthy()
   })
@@ -24,9 +28,13 @@ describe('view', () => {
     expect(typeof view).toBe('object')
     expect(view.id).toBe(home.id)
     expect(view.Title).toBe(home.Title)
-    expect(view.Context).toBe(home.Context)
-    expect(view.Version).toBe(home.Version)
-    expect(view.Organisation).toBe(home.Organisation)
+    expect(view.Discription).toBe(home.Discription)
+    expect(view.Tags).toBe(home.Tags)
+    expect(view.Build).toBe(home.Build)
+    expect(view.Creator).toBe(home.Creator)
+    expect(view.Docs).toBe(home.Docs)
+    expect(view.Org).toBe(home.Org)
+    expect(view.OrgWebsite).toBe(home.OrgWebsite)
     expect(view.createdAt).toBeTruthy()
     expect(view.updatedAt).toBeTruthy()
   })
