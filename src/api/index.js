@@ -5,7 +5,9 @@ import auth from './auth'
 // import passwordReset from './password-reset'
 import notes from './notes'
 import home from './home'
-import snip from './snip'
+import snipet from './snipet'
+
+
 
 const router = new Router()
 
@@ -37,9 +39,11 @@ router.use('/auth', auth)
 
 // router.use('/password-resets', passwordReset)
 router.use('/notes', notes)
-router.use('/', home)
-router.use('/snipet', snip)
+router.use('/home', home)
+router.use('/snipets', snipet)
 
-
+router.get('/', function (req, res) {
+    res.redirect('/home');
+});
 
 export default router

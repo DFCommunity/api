@@ -1,4 +1,4 @@
-# delta-force-community-api v0.0.1
+# delta-force-community-api v0.1.1
 
 
 
@@ -19,6 +19,13 @@
 	- [Delete notes](#delete-notes)
 	- [Retrieve notes](#retrieve-notes)
 	- [Update notes](#update-notes)
+	
+- [Snipet](#snipet)
+	- [Create snipet](#create-snipet)
+	- [Delete snipet](#delete-snipet)
+	- [Retrieve snipet](#retrieve-snipet)
+	- [Retrieve snipets](#retrieve-snipets)
+	- [Update snipet](#update-snipet)
 	
 - [User](#user)
 	- [Create user](#create-user)
@@ -226,6 +233,71 @@
 | about			| 			|  <p>Notes's about.</p>							|
 | context			| 			|  <p>Notes's context.</p>							|
 | tags			| 			|  <p>Notes's tags.</p>							|
+
+# Snipet
+
+## Create snipet
+
+
+
+	POST /snipets
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| Title			| 			|  <p>Snipet's Title.</p>							|
+| Language			| 			|  <p>Snipet's Language.</p>							|
+| Body			| 			|  <p>Snipet's Body.</p>							|
+| Tags			| 			|  <p>Snipet's Tags.</p>							|
+
+## Delete snipet
+
+
+
+	DELETE /snipets/:id
+
+
+## Retrieve snipet
+
+
+
+	GET /snipets/:id
+
+
+## Retrieve snipets
+
+
+
+	GET /snipets
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| q			| String			| **optional** <p>Query to search.</p>							|
+| page			| Number			| **optional** <p>Page number.</p>							|
+| limit			| Number			| **optional** <p>Amount of returned items.</p>							|
+| sort			| String[]			| **optional** <p>Order of returned items.</p>							|
+| fields			| String[]			| **optional** <p>Fields to be returned.</p>							|
+
+## Update snipet
+
+
+
+	PUT /snipets/:id
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| Title			| 			|  <p>Snipet's Title.</p>							|
+| Language			| 			|  <p>Snipet's Language.</p>							|
+| Body			| 			|  <p>Snipet's Body.</p>							|
+| Tags			| 			|  <p>Snipet's Tags.</p>							|
 
 # User
 

@@ -1,18 +1,13 @@
 import mongoose, { Schema } from 'mongoose'
 
-const snipSchema = new Schema({
-  Creator: {
-    type: Schema.ObjectId,
-    ref: 'User',
-    required: true
-  },
+const snipetSchema = new Schema({
   Title: {
     type: String
   },
-  Code: {
+  Language: {
     type: String
   },
-  Lang: {
+  Body: {
     type: String
   },
   Tags: {
@@ -26,15 +21,14 @@ const snipSchema = new Schema({
   }
 })
 
-snipSchema.methods = {
+snipetSchema.methods = {
   view (full) {
     const view = {
       // simple view
       id: this.id,
-      Creator: this.Creator.view(full),
       Title: this.Title,
-      Code: this.Code,
-      Lang: this.Lang,
+      Language: this.Language,
+      Body: this.Body,
       Tags: this.Tags,
       createdAt: this.createdAt,
       updatedAt: this.updatedAt
@@ -47,7 +41,7 @@ snipSchema.methods = {
   }
 }
 
-const model = mongoose.model('Snip', snipSchema)
+const model = mongoose.model('Snipet', snipetSchema)
 
 export const schema = model.schema
 export default model
