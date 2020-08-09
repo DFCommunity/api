@@ -6,6 +6,8 @@ Docs Publish and Build Status -> [![Netlify Status](https://api.netlify.com/api/
 
 API Build Status -> [![Build Status](https://travis-ci.com/DFCommunity/api.svg?branch=master)](https://travis-ci.com/DFCommunity/api)
 
+Heroku Deployment and App Status -> [![Heroku](http://heroku-badge.herokuapp.com/?app=dfcommunity-api&style=flat)]
+
 
 See the API's [documentation](DOCS.md).
 
