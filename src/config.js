@@ -40,7 +40,7 @@ const config = {
   test: {},
   development: {
     mongo: {
-      uri: 'mongodb+srv://bravo68web:Jeet@27032003@dfcommunity.wzrsg.mongodb.net/delta-force-community-api-dev?retryWrites=true&w=majority',
+      uri: '',
       options: {
         debug: true
       }
@@ -50,7 +50,7 @@ const config = {
     ip: process.env.IP || undefined,
     port: process.env.PORT || 8080,
     mongo: {
-      uri: process.env.MONGODB_URI || 'mongodb+srv://bravo68web:Jeet@27032003@dfcommunity.wzrsg.mongodb.net/delta-force-community-api'
+      uri: process.env.MONGODB_URI || ''
     }
   }
 }
