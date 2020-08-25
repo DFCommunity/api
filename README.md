@@ -8,6 +8,7 @@ API Build Status -> [![Build Status](https://travis-ci.com/DFCommunity/api.svg?b
 
 Heroku Deployment and App Status -> [![Heroku](http://heroku-badge.herokuapp.com/?app=dfcommunity-api&style=flat)](https://api.community.win)
 
+Open Source Instance Hosted at ![opeNode](https://openode.io)
 
 See the API's [documentation](DOCS.md).
 
