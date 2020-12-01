@@ -6,8 +6,7 @@ import auth from './auth'
 import notes from './notes'
 import home from './home'
 import snipet from './snipet'
-
-
+import contactus from './contactus'
 
 const router = new Router()
 
@@ -41,9 +40,10 @@ router.use('/auth', auth)
 router.use('/notes', notes)
 router.use('/home', home)
 router.use('/snipets', snipet)
+router.use('/contactform', contactus)
 
 router.get('/', function (req, res) {
-    res.redirect('/home');
-});
+  res.redirect('/home')
+})
 
 export default router
